@@ -1,0 +1,22 @@
+@media (max-width: 992px){
+    body{
+        overflow-x: hidden;
+        background-image: none;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        width: 100vw;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    h1{
+        margin: 0;
+    }
+    .pizza,
+    input[type=text]
+    {
+        width: 80%;
+    }
+}
