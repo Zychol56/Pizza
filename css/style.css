@@ -1,0 +1,88 @@
+body{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.container{
+    background-color: azure;
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    border: 2px solid black;
+}
+.container input[type=submit],
+.container button
+{
+    display: flex;
+    background-color: #f20d0d;
+    color: white;
+    border: none;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 1s;
+    border: 1px solid black;
+}
+.container h1{
+    color: white;
+    background-color: #f20d0d;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+}
+.container .FinalPrice{
+    margin: 20px;
+    color: #f20d0d;
+    font-weight: 700;
+}
+.container .soos{
+    margin: 20px 10px;
+}
+.container .paragraf{
+    color: white;
+    background-color: #f20d0d;
+    width: 100%;
+    margin: 10px 0;
+}
+.container input[type=checkbox]{
+    margin: auto 10px;
+}
+.container input[type=text],
+.container .pizza{
+    width: 40%;
+    margin: 10px auto;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #f20d0d;
+    color: white;
+}
+.container input[type=submit]:hover{
+    background-color: #d42222;
+}
+.container input::placeholder{
+    color: white;
+}
+.container p{
+    text-align: center;
+}
+.container h1,
+.container .FinalPrice,
+.container .agr,
+.container .soos,
+.container .paragraf,
+.container input[type=text],
+.container .pizza{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.container a{
+    color: white;
+    text-decoration: none;
+}
