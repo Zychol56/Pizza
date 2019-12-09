@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizza!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="icon" href="img/fav.png">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sel">
+            <h1>Zamów Pizze</h1>
+    <form id="myForm" method="POST">
+        <input type="text" for="name" placeholder="Imie"></input>
+        <input type="text" for="surname" placeholder="Nazwisko"></input>
+        <input type="text" for="street" placeholder="Ulica"></input>
+        <input type="text" for="housenumber" placeholder="Nr Domu/Mieszkania"></input>
+        <input type="text" for="postcode" pattern="^\d{2}-\d{3}$" title="Format XX-XXX" placeholder="Kod Pocztowy"></input>
+        <input type="text" for="city" placeholder="Miasto"></input>
+        <select name="smak" class="pizza">
+                <option value="0" price="0" select="selected">-- Wybierz Pizzę --</option>
+                <option value="Margherita" price="15">Margherita</option>
+                <option value="Capriciosa" price="19">Capriciosa</option>
+                <option value="Hawajska" price="21">Hawajska</option>
+                <option value="Wiejska" price="25">Wiejska</option>
+                <option value="Diabelska" price="22">Diabelska</option>
+        </select>
+            <div class="soos"><input type="checkbox" id="garlic" name="sos">
+            <label for="garlic">Czosnkowy</label>
+            <input type="checkbox" id="tomato" name="sos">
+            <label for="tomato">Pomidorowy</label></div>
+            <div class="agr"><input type="checkbox" id="agreement" name="agreement">
+            <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label></div>
+            <span class="FinalPrice">0 PLN</span>
+            <p class="paragraf"></p>
+        <input type="submit" value="Dalej">
+    </form>
+</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
